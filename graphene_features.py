@@ -24,7 +24,7 @@ def calculate_theoretical_k(df, return_components=False):
     
     # === 🔥 关键修改点：基础常数与寄生散射 ===
     # 原来是 3200 (纯理想)，现在降级为 2000 (工程级理想)
-    base_constant = 2200.0 
+    base_constant = 4000 
     
     # 计算理想值
     k_ideal = base_constant * temp_factor * size_factor * defect_factor
@@ -77,4 +77,5 @@ def enhance_features(df):
     # 特征里也存一份 log_theory
     df_out['log_theory_k'] = np.log10(raw_theory_k * combined_factor + 1.0)
     
+
     return df_out

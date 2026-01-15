@@ -2,7 +2,7 @@
 from langchain_openai import ChatOpenAI
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain import ConversationBufferMemory
+from langchain.memory import ConversationBufferMemory
 # 🔥 引入所有新工具
 from graphene_tools import ml_prediction_tool, physics_calculation_tool, inverse_design_tool, plot_trend_tool
 
@@ -54,4 +54,5 @@ def build_agent(api_key, base_url, model_name):
         handle_parsing_errors=True
     )
     
+
     return agent_executor

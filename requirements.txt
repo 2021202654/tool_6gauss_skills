@@ -24,4 +24,8 @@ streamlit>=1.32.0
 # 限制 Protobuf 版本，防止 Streamlit 报错
 protobuf>=4.25.0,<5.0.0
 # 如果未来用到 shap，限制版本以配合 Numpy 1.x
+
 shap<0.50.0
+
+matplotlib
+scipy

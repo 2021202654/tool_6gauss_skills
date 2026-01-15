@@ -1,0 +1,18 @@
+[server]
+port = 8501
+enableCORS = false
+maxUploadSize = 200  # 允许上传最大 200MB 的文件 (如果你以后想让它读 PDF)
+
+[browser]
+gatherUsageStats = false # 关闭 Streamlit 的数据收集，启动更快
+
+[theme]
+base = "light"           # 强制亮色模式，科研风格通常用浅色
+primaryColor = "#4F8BF9" # 设置主色调为“科技蓝”
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#31333F"
+font = "sans serif"
+
+[runner]
+magicEnabled = false     # 关闭 Magic 命令，避免误触

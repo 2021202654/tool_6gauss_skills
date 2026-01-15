@@ -1,0 +1,22 @@
+# 1. Python 编译垃圾
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 2. 虚拟环境 (千万别传)
+venv/
+.venv/
+env/
+
+# 3. 环境变量与密钥 (安全第一!)
+.env
+.api_key
+secrets.toml
+
+# 4. 操作系统缓存
+.DS_Store
+Thumbs.db
+
+# 5. IDE 配置
+.vscode/
+.idea/
